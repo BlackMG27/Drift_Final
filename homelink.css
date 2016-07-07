@@ -1,0 +1,18 @@
+/*------------------------------------*\
+-------- Page Styles: Homelink
+\*------------------------------------*/
+
+
+.homelink {
+  position:absolute;
+  left:40px;
+  top:10px
+      
+}
+
+.backlink {
+  position:absolute;
+  left:900px;
+  top:30px
+      
+}

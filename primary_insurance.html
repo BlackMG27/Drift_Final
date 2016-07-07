@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Primary Insurance | Personal Information </title>
+    <link rel="stylesheet" href="style3.css" />
+    <link rel="stylesheet" type="text/css" href="homelink.css">
+   <script src="jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="load_7.js"></script>
+		<meta charset="UTF-8">
+      <style>
+     body{
+        background-image: url('backgrounds/summer/storyboard_colors_3-03.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.9;
+      }
+
+          .right{
+          float:right;
+           color:rgb(51, 88, 140);
+          }
+            
+          
+          
+            a{
+           color:rgb(51, 88, 140);
+          }
+          
+          
+          
+          
+          
+    </style>
+	
+		</head>
+		
+		<body>
+		
+   <div class='one'> Insurance Information </div>     
+      </br> <div class="homelink">
+      <a href="index.html">
+      <img border="0" alt="Home" src="home_link-10-2.png" width="76" height="76">
+    </a></div>
+
+     <a href="insurancemain.html">
+    <div class="backlink">
+      <arrow onclick="goBack()">&#8592;</arrow>
+      <script>
+            function goBack() {
+            window.history.back();
+            return false;
+            }
+      </script></div> </a>
+    
+    
+  </br>
+    <div class='two'> Primary Insurance
+
+
+
+
+</div>	
+		 </br>
+      <div class='three'> Primary Insurance<span class="right">   <a href="Patient_card_ID.html"> Take ID Picture </span></div> </a>
+          
+          
+          
+          </div>  
+        </br>      
+            <table border=1 width=500>
+                <tr>
+                  <th><input type="text" name="fname" id="insurance_f_fname"placeholder="First Name"/> </th> 
+                  <th><input type="text" name="lname" id="insurance_f_lname"placeholder="Last Name"/></th>
+                  <th><input type="text" name="bdate" id="insurance_f_bdate"placeholder="Birthdate: mm/dd/yyyy" /></th>
+                  <th><input type="text" name="age" id="insurance_f_age"placeholder="Age" maxlength="3"/></th>                
+                </tr>
+
+                <tr>
+                  <th> <input type="text" name="address" id="insurance_f_address" placeholder="Address"/> </th>
+                  <th>  <input type="text" name="city" id="insurance_f_city" placeholder="City"/></th>
+                  <th> <input type="text" name="state" id="insurance_f_state" placeholder="State" maxlength="2"/></th>
+                  <th> <input type="text" name="zCode" id="insurance_f_zcode" placeholder="Zip Code" maxlength="5"/></th>
+
+                </tr>
+
+                  <th><select  id="insurance_f_sex" name="Sex">
+                        <option value="select">Select Sex</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                       </select></th>
+                
+
+                 <th><input type="text" name="mStatus" id="insurance_f_mstatus" placeholder="Marital Status"/><th>
+                  <!--What does 'Relationship' Mean -->
+                 <th><input type="text" name="rStatus" id="insurance_f_relation" placeholder="Relationship"/></th>
+          
+                 
+</tr>
+
+                <th><input type="text" name="mID" id="insurance_f_med_group" placeholder="Medical Group ID"/></th>
+                 <th><input type="text" name="Mnum" id="insurance_f_mem_num" placeholder="Member #"/></th>
+                 <th><input type="text" name="Gnum" id="insurance_f_grou_num" placeholder="Group #"/></th>
+                 <th><input type="text" name="Cardnum" id="insurance_f_card_num" placeholder="Card #"/></th>
+                 
+</tr>
+
+                <th><input type="text" name="PCP" id="insurance_f_pcp" placeholder="PCP"/></th>
+                 <th><input type="text" name="Conum" id="insurance_f_contact" placeholder="Contact Number"/></th>  
+          <th><input type="text" name="iName" id="insurance_f_iname" placeholder="Insurance Name"/></th>
+
+</tr>
+
+
+<th><input type="text" name="mID" id="insurance_f_ref-num" placeholder="Ref Number"/></th>
+
+              <th><input type="text" name="Mnum" id="insurance_f_status" placeholder="Status"/></th>
+                 <th><input type="text" name="Cnum" id="insurance_f_case-num" placeholder="Case Number"/></th>
+                 <th><input type="text" name="cID" id="insurance_f_case_id" placeholder="Case ID"/></th>
+                 
+</tr>
+
+    
+            </table>  
+            
+
+		</body>
+		
+		</html>

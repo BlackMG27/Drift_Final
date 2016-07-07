@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Patient | Nearest Relative </title>
+    <link rel="stylesheet" type="text/css" href="style3.css" />
+    <link rel="stylesheet" type="text/css" href="homelink.css">
+   <script src="jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="load_4.js"></script>
+    <meta charset="UTF-8">
+		<style>
+      body{
+        background-image: url('backgrounds/summer/storyboard_colors_3-06.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.9;
+      }
+    </style>
+		</head>
+		
+		<body>
+		
+   <div class='one'> Patient</div>     
+      </br> 
+    <div class='two'> Patient Information </div>	
+		 </br>
+     <div class="homelink">
+      <a href="index.html">
+      <img border="0" alt="Home" src="home_link-10-2.png" width="76" height="76">
+    </a></div>
+
+
+<a href="patient_menu_patient.html">
+    <div class="backlink">
+      <arrow onclick="goBack()">&#8592;</arrow>
+      <script>
+            function goBack() {
+            window.history.back();
+            return false;
+            }
+      </script></div> </a>
+  </br>
+      <div class='three'> Nearest Relative </div>	
+        </br>      
+            <table border=1 width=500>
+                <tr>
+                  <th><input type="text" name="fname" id="patient_nr_fname" placeholder="First Name"/></th> 
+                  <th><input type="text" name="lname" id="patient_nr_lname" placeholder="Last Name"/></th>
+                  <th> <input type="text" name="rPatient" id="patient_nr_relation" placeholder="Relationship to Patient"/> </th>  
+                  <th> </th>           
+                </tr>
+
+                <tr>
+                  <th><input type="text" name="address" id="patient_nr_address" placeholder="Address"/></th>
+                  <th><input type="text" name="city" id="patient_nr_city" placeholder="City"/></th>
+                  <th><input type="text" name="state" id="patient_nr_state" placeholder="State" maxlength="2"/></th>
+                  <th><input type="text" name="zCode" id="patient_nr_zcode" placeholder="Zip Code" maxlength="5"/></th>
+
+                </tr>
+
+                <tr>
+                  <th><select name="Employment Status" id="patient_nr_estatus">
+                        <option value="select">Select Employment Status</option>
+                        <option value="fTime">Full-Time</option>
+                        <option value="pTime">Part-Time</option>
+                        <option value="student">Student</option>
+                        <option value="unemployed">Unemployed</option>
+                        <option value="retired">Retired</option>
+                       </select></th>
+                  <th> </th>
+                  <th><input type="text" name="employer" id="patient_nr_ename" placeholder="Employer"/></th>
+                  <th> </th>
+                </tr>
+                            
+                <tr>
+                  <th><input type="text" name="hPhone" id="patient_nr_hphone" placeholder="Home Phone" maxlength="10"/></th>
+                  <th>  </th>
+                  <th><input type="text" name="wPhone" id="patient_nr_wphone" placeholder="Work Phone" maxlength="10"/></th>
+                  <th> </th>
+                </tr>     
+            </table>  
+            
+
+		</body>
+		
+		</html>

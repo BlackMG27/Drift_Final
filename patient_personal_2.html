@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Patient | Personal Information </title>
+    <link rel="stylesheet" href="style3.css" />
+    <link rel="stylesheet" type="text/css" href="homelink.css">
+
+  <script type="text/javascript" src="load_example.js"></script>
+		<meta charset="UTF-8">
+      <style>
+     body{
+        background-image: url('backgrounds/summer/storyboard_colors_3-03.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.9;
+      }
+
+    </style>
+	
+		</head>
+		
+		<body>
+		
+   <div class='one'> Patient </div>     
+      </br> 
+      <div class="homelink">
+      <a href="index.html">
+      <img border="0" alt="Home" src="home_link-10-2.png" width="76" height="76">
+    </a></div>
+
+  <a href="patient_menu_patient.html" onclick="return false;">
+  <div class="backlink" id="print">
+      <arrow onclick="goBack()">&#8592;</arrow>
+      <script>
+            function goBack() {
+              return false;
+            window.history.back();
+            }
+      </script></div> </a>
+
+
+    <div class='two'> Patient Information</div>	
+	</br>
+      <div class='three'> Personal Information </div>	
+        </br>      
+        <form>
+            <table border=1 width=500>
+                <tr>
+                  <th><input type="text" data-name="First Name" name="fname" id="patient_p_fname" placeholder="First Name"/> </th> 
+                  <th><input type="text" name="lname" id="patient_p_lname" placeholder="Last Name"/></th>
+                  <th><input type="text" name="bdate" id="patient_p_bdate" placeholder="Birthdate: mm/dd/yyyy" /></th>
+                  <th><input type="text" name="age"   id="patient_p_age" placeholder="Age" maxlength="3"/></th>                
+                </tr>
+
+                <tr>
+                  <th> <input type="text" name="address" id="patient_p_address" placeholder="Address"/> </th>
+                  <th>  <input type="text" name="city" id="patient_p_city"  placeholder="City"/></th>
+                  <th> <input type="text" name="state" id="patient_p_state" placeholder="State" maxlength="2"/></th>
+                  <th> <input type="text" name="zCode" id="patient_p_zcode" placeholder="Zip Code" maxlength="5"/></th>
+
+                </tr>
+
+                <tr>
+                  <th><select id="patient_p_race" name="Race">
+                        <option value="select">Select Race</option>
+                        <option value="black">Black or African American</option>
+                        <option value="white">Caucasian American or White</option>
+                        <option value="latino">Hispanic/Latino</option>
+                        <option value="a_in">American Indian or Alaskan Native</option>
+                        <option value="asian">Asian</option>
+                        <option value="nh_pi">Native Hawaiian or Pacific Islander</option>
+                        <option value="multi">Multiracial</option>
+                       </select></th>
+                  <th><select id="patient_p_ethnic" name="Ethnicity">
+                        <option value="select_ethnicity">Select Ethnicity</option>
+                        <option value="yes_Hispanic">Hispanic or Latino</option>
+                        <option value="no_Hispanic">Not Hispanic or Latino</option>
+                  </select></th>
+                  <th><input type="text" name="mStatus" id="patient_p_mstatus" placeholder="Marital Status"/></th>
+                  <th><select name="Sex" id="patient_p_sex">
+                        <option value="select">Select Sex</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                       </select></th>
+                </tr>
+                            
+                <tr>
+                  <th><input type="text" name="hPhone" id="patient_p_hphone" placeholder="Home Phone" maxlength="10"/></th>
+                  <th><input type="text" name="cPhone" id="patient_p_cphone" placeholder="Cell Phone" maxlength="10"/></th>
+                  <th><input type="text" name="ssn" id="patient_p_ssn"placeholder="SSN#" maxlength="9"/></th>
+                  <th><select id="patient_p_religion" name="Religion">
+                      <option value="">-- Select Religion --</option>
+                      <option value="African Traditional & Diasporic">African Traditional & Diasporic</option>
+                      <option value="Agnostic">Agnostic</option>
+                      <option value="Atheist">Atheist</option>
+                      <option value="Baha'i">Baha'i</option>
+                      <option value="Buddhism">Buddhism</option>
+                      <option value="Cao Dai">Cao Dai</option>
+                      <option value="Chinese traditional religion">Chinese traditional religion</option>
+                      <option value="Christianity">Christianity</option>
+                      <option value="Hinduism">Hinduism</option>
+                      <option value="Islam">Islam</option>
+                      <option value="Jainism">Jainism</option>
+                      <option value="Juche">Juche</option>
+                      <option value="Judaism">Judaism</option>
+                      <option value="Neo-Paganism">Neo-Paganism</option>
+                      <option value="Nonreligious">Nonreligious</option>
+                      <option value="Rastafarianism">Rastafarianism</option>
+                      <option value="Secular">Secular</option>
+                      <option value="Shinto">Shinto</option>
+                      <option value="Sikhism">Sikhism</option>
+                      <option value="Spiritism">Spiritism</option>
+                      <option value="Tenrikyo">Tenrikyo</option>
+                      <option value="Unitarian-Universalism">Unitarian-Universalism</option>
+                      <option value="Zoroastrianism">Zoroastrianism</option>
+                      <option value="primal-indigenous">primal-indigenous</option>
+                      <option value="Other">Other</option>
+                    </select></th>
+                </tr>     
+            </table>  
+      </form> 
+             <!--<form id="register" action="http://javascriptbook.com/code/c08/register.php" method="post">
+          <h2>Register</h2>
+          <label for="name">Username</label><input type="text" id="name" name="name" />
+          <label for="pwd">Password</label><input type="password" id="pwd" name="pwd" />
+          <label for="email">Email</label><input type="email" id="email" name="email" />
+          <input type="submit" value="Join" />
+        </form>
+      -->
+
+        <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>-->
+    <!--<script src="js/jquery-1.11.0.min.js"></script>-->
+    <script src="jq-post.js"></script>   
+		</body>
+		
+		</html>

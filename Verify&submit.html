@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Verify & Submit  </title>
+		 <link rel="stylesheet" href="style3.css" />
+    <link rel="stylesheet" type="text/css" href="homelink.css">
+    <script src="jquery-2.2.3.min.js"></script>
+		<meta charset="UTF-8">
+		
+		<style type="text/css">
+		body {
+		
+            	
+            height: 1000px;
+	 
+		background-image: url('backgrounds/spring/storyboard_colors_01-08.png');
+        }
+		opacity: 0.9;
+		font-family: Times, sans-serif;}
+            
+		h1 {font-family: Helvetica;
+		color:#002080;
+        background-color:#e5fff2; }
+		
+            h1 {font-family: Helvetica;
+		color:#002080;
+        background-color:#e5fff2; }
+            
+		h2{ color:#002080; font-family:Helvetica; text-align: left;}
+            
+        h3{ color:#002080; font-family:Helvetica; text-align: left;}    
+            
+            
+		p{
+            
+            width: 300px;
+            border: 3px groove #0088dd;
+            background-color: #f5f5f0;
+            padding: 10px;
+            margin:auto;
+            color: #4d4d4d;
+            text-align: center;
+        }
+		
+		table{color:#002080;
+                margin:auto;
+            border: 1px solid #f5f5f0; 
+              background-color:#e5fff2;
+        }
+		
+            
+         
+            
+             div.one{
+                margin:auto;
+            border: 1px solid #f5f5f0; 
+                 border: transparent;
+              background-color: transparent;
+                  font-family:Helvetica Neue;
+            font-weight:400;
+		     color: rgb(51, 88, 140);
+   align-content: center;
+    width:500px;
+            font-size: 60px;
+                padding: 10px;
+                 padding-left: 40px;
+                opacity: .9;
+                 
+                text-align: center;
+                border-radius: 10px;
+                 z-index:-90;
+               
+                 
+            }
+            
+            
+            
+             div.two{
+                margin:auto;
+            border: 1px solid #f5f5f0; 
+                 border: transparent;
+              background-color: transparent;
+                 font-family:Helvetica Neue;
+            font-weight:400;
+		      color:none;
+
+            font-size: 60px;
+                padding: 20px;
+                opacity: .9;
+                 margin: 1px 1px 1px 1px;
+                text-align: center;
+                border-radius: 10px;
+                 height:600px;
+                 position:fixed;
+                 bottom:30;
+                 z-index:-20;
+                 padding-top: 30px;
+                   
+                 
+            }
+            ul{
+                width: 750px;
+                height: 300px;
+                margin: 0 auto;
+                background: rgba(255, 255,255, .3);
+                overflow: scroll;
+            }
+            
+            
+          li{
+
+            list-style: none;
+            text-align: left;
+            color: #0B0B61;
+
+          }
+         
+               
+            
+        
+            
+         
+         }   
+            
+         
+             
+            
+             
+         }
+            
+		li{ font-size:17pt;
+            
+		}
+           
+           
+         
+            
+           button{
+              align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+               border:none;
+    background-color:none;
+           background:none;    
+    box-sizing:none;
+    padding: 10px 200px 3px;
+               object-position: center;
+    
+          }
+            
+            
+            
+         img{
+         object-position: center;
+
+             
+         }   
+            
+            
+           h4{
+            margin-bottom: -20px;
+           } 
+         
+		
+		</style>
+		
+		
+		
+		
+		</head>
+		
+		<body>
+	
+        <div class="homelink">
+      <a href="index.html">
+      <img border="0" alt="Home" src="home_link-10-2.png" width="76" height="76">
+    </a></div>
+
+     <a href="basicintakedata.html">
+    <div class="backlink">
+      <arrow onclick="goBack()">&#8592;</arrow>
+      <script>
+            function goBack() {
+            window.history.back();
+            }
+      </script></div> </a>
+            
+            
+          
+            
+         <div class='one'> Verify & Submit</div> 
+         <div id="show_info">
+            <h4>Please verify all the information</h4>
+         </div> 
+        <div id="dump">  <ul></ul></div>
+              
+    <img src="" id="final-image" style="width:70%"/>
+   <button onclick="myFunction()">
+<img src="images/abstract_leaves_2-06.png" alt="abstract leaf" style="width:600px;height:600px;" align="center"> </button>
+
+<script>
+function myFunction() {
+    alert("Thank You! Your information is printing.");
+}
+</script>
+		 
+            </br> 
+
+
+		
+<script>
+function callback(data) {
+  console.log('callback');
+
+  var ul = $('#dump ul');
+
+  for (var key in data) {
+    console.log(key,': ', data[key]);
+
+//    $('#'+key).html(data[key]);
+var li = $('<li>');
+li.html(key+': '+data[key]);
+$(ul).append(li);
+
+
+
+  }
+
+
+}
+$(document).on('ready', function() {
+  var url = './registration.json';
+  $.getJSON (url/*+"?callback=?", null*/, callback);
+  console.log('done');
+});
+
+
+</script>
+
+<script>
+function callback(data) {
+  console.log('callback');
+
+  var ul = $('#dump ul');
+
+  for (var key in data) {
+    console.log(key,': ', data[key]);
+
+//    $('#'+key).html(data[key]);
+var li = $('<li>');
+li.html(key+': '+data[key]);
+$(ul).append(li);
+
+
+
+  }
+
+
+}
+$(document).on('ready', function() {
+  var url = './registration_employer.json';
+  $.getJSON (url/*+"?callback=?", null*/, callback);
+  console.log('done');
+});
+
+
+</script>
+<script>
+function callback(data) {
+  console.log('callback');
+
+  var ul = $('#dump ul');
+
+  for (var key in data) {
+    console.log(key,': ', data[key]);
+
+//    $('#'+key).html(data[key]);
+var li = $('<li>');
+li.html(key+': '+data[key]);
+$(ul).append(li);
+
+
+
+  }
+
+
+}
+$(document).on('ready', function() {
+  var url = './registration_emergency.json';
+  $.getJSON (url/*+"?callback=?", null*/, callback);
+  console.log('done');
+});
+
+
+</script>
+
+<script>
+function callback(data) {
+  console.log('callback');
+
+  var ul = $('#dump ul');
+
+  for (var key in data) {
+    console.log(key,': ', data[key]);
+
+//    $('#'+key).html(data[key]);
+var li = $('<li>');
+li.html(key+': '+data[key]);
+$(ul).append(li);
+
+
+
+  }
+
+
+}
+$(document).on('ready', function() {
+  var url = './registration_relative.json';
+  $.getJSON (url/*+"?callback=?", null*/, callback);
+  console.log('done');
+});
+
+
+</script>
+<script>
+function callback(data) {
+  console.log('callback');
+
+  var ul = $('#dump ul');
+
+  for (var key in data) {
+    console.log(key,': ', data[key]);
+
+//    $('#'+key).html(data[key]);
+var li = $('<li>');
+li.html(key+': '+data[key]);
+$(ul).append(li);
+
+
+
+  }
+
+
+}
+$(document).on('ready', function() {
+  var url = './registration_guarantor_p.json';
+  $.getJSON (url/*+"?callback=?", null*/, callback);
+  console.log('done');
+});
+
+
+</script>
+<script>
+function callback(data) {
+  console.log('callback');
+
+  var ul = $('#dump ul');
+
+  for (var key in data) {
+    console.log(key,': ', data[key]);
+
+//    $('#'+key).html(data[key]);
+var li = $('<li>');
+li.html(key+': '+data[key]);
+$(ul).append(li);
+
+
+
+  }
+
+
+}
+$(document).on('ready', function() {
+  var url = './registration_guarantor_e.json';
+  $.getJSON (url/*+"?callback=?", null*/, callback);
+  console.log('done');
+});
+
+
+</script>
+<script>
+function callback(data) {
+  console.log('callback');
+
+  var ul = $('#dump ul');
+
+  for (var key in data) {
+    console.log(key,': ', data[key]);
+
+//    $('#'+key).html(data[key]);
+var li = $('<li>');
+li.html(key+': '+data[key]);
+$(ul).append(li);
+
+
+
+  }
+
+
+}
+$(document).on('ready', function() {
+  var url = './insurance_f.json';
+  $.getJSON (url/*+"?callback=?", null*/, callback);
+  console.log('done');
+});
+
+
+</script>
+<script>
+function callback(data) {
+  console.log('callback');
+
+  var ul = $('#dump ul');
+
+  for (var key in data) {
+    console.log(key,': ', data[key]);
+
+//    $('#'+key).html(data[key]);
+var li = $('<li>');
+li.html(key+': '+data[key]);
+$(ul).append(li);
+
+
+
+  }
+
+
+}
+$(document).on('ready', function() {
+  var url = './insurance_s.json';
+  $.getJSON (url/*+"?callback=?", null*/, callback);
+  console.log('done');
+});
+
+
+</script>
+<script>
+var dataImage = localStorage.getItem('imgData');
+bannerImg = document.getElementById('final-image');
+bannerImg.src = "data:image/png;base64," + dataImage;
+</script>		
+		<!-- content goes here-->
+		
+		</body>
+		
+		</html>
